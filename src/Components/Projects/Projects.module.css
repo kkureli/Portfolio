@@ -1,0 +1,27 @@
+.home {
+    /* font-size: 55px !important;
+    font-weight: bold; */
+    /* margin: 0; */
+    position: relative;
+    bottom: 350px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: 70px;
+    /* padding: 0; */
+    width: 90%;
+}
+
+.inline:hover {
+    color: white;
+}
+
+.inline {
+    display: inline-block;
+    color: white;
+    letter-spacing: -7px;
+    padding: 0;
+    font-size: 55px;
+    color: red;
+    margin-left: 12px;
+    margin-bottom: 40px;
+}
