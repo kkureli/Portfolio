@@ -65,7 +65,7 @@ export class Projects extends Component {
   };
   render() {
     return (
-      <div>
+      <div style={{ height: "0" }}>
         <div className={style.home}>
           <div class="container">
             <div class="row">
