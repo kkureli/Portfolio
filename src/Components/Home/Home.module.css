@@ -7,7 +7,6 @@ code {
     font-style: italic;
     font-family: cursive;
     color: rgb(81, 81, 82);
-    /* font-family: "Dancing Script", cursive; */
     font-family: "La Belle Aurore", cursive;
     position: relative;
     left: -10%;
@@ -127,17 +126,9 @@ canvas {
     .music {
         position: relative;
         left: -700px;
-        /* bottom: 11em; */
         width: 50%;
     }
 }
-
-
-/* @media (max-width: 770px) {
-    .music {
-        visibility: hidden;
-    }
-} */
 
 @media (max-width: 770px) {
     .dropDown {
@@ -157,4 +148,8 @@ canvas {
 
 .visible {
     visibility: visible;
+}
+
+label {
+    position: absolute;
 }

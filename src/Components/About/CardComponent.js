@@ -5,7 +5,7 @@ import React from "react";
 
 export default function CardComponent() {
   return (
-    <div>
+    <div style={{ zIndex: "950" }}>
       <Card
         border="light"
         bg={"danger"}

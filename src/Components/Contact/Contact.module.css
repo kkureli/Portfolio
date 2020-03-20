@@ -1,14 +1,9 @@
 .home {
-    /* font-size: 55px !important;
-    font-weight: bold; */
-    /* margin: 0; */
-    position: relative;
-    top: -400px;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    margin-left: 70px;
-    /* padding: 0; */
-    width: 90%;
+    display: inline-block;
+    position: absolute;
+    margin-left: 1%;
+    margin-top: 5%;
+    width: 100%;
 }
 
 .inline:hover {
@@ -23,11 +18,24 @@
     font-size: 55px;
     color: red;
     margin-left: 12px;
-    margin-bottom: 40px;
+    margin-bottom: 75px;
 }
 
+@media (max-width: 992px) {
+    .inline {
+        font-size: 290%;
+    }
+}
 
-/* 
-form {
-    height: 50px;
-} */
+@media (max-width: 992px) {
+    .home {
+        margin-left: 7.5%;
+    }
+}
+
+@media (max-width: 992px) {
+    .maps {
+        margin-top: 50px;
+        height: 100px;
+    }
+}

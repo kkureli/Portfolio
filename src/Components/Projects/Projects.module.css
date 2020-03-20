@@ -1,14 +1,6 @@
 .home {
-    /* font-size: 55px !important;
-    font-weight: bold; */
-    /* margin: 0; */
-    position: relative;
-    bottom: 350px;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    margin-left: 70px;
-    /* padding: 0; */
-    width: 90%;
+    display: inline-block;
+    margin-left: 12.5%;
 }
 
 .inline:hover {

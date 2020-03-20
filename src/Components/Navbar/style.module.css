@@ -1,10 +1,23 @@
+/* body {
+    z-index: -5 !important;
+} */
+
+html,
+body {
+    height: 100%;
+}
+
 .Nav {
+    /* position: absolute; */
+    left: 0;
     width: 60px;
     background-color: rgb(24, 24, 24);
     height: 100vh;
     display: block;
     color: white;
-    z-index: -4;
+    z-index: 4;
+    color: black;
+    position: fixed;
 }
 
 .logo {

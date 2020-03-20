@@ -36,7 +36,7 @@ class Maps extends Component {
             visible={this.state.showingInfoWindow}
           >
             <div>
-              <h1 style={{ color: "red", backgroundColor: "silver" }}>
+              <h1 style={{ color: "red", backgroundColor: "" }}>
                 Kaan is here!
               </h1>
             </div>

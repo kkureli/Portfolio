@@ -1,9 +1,19 @@
-/* div {
-    width: 200px;
-    top: 0;
-    color: white;
+/* .pdfHome {
+    font-weight: bold;
+    margin: 0;
+    top: 10px !important;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: 5%;
+    padding: 0;
+    width: 100%;
 } */
 
 .react-pdf__Page {
     height: 700px;
+}
+
+.react-pdf__Document {
+    width: 0;
+    height: 0;
 }

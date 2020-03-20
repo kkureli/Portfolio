@@ -54,7 +54,7 @@ export default function About() {
                     frontend development opportunities.
                   </p>
                   <div>
-                    <button type="button" class="btn btn-dark ">
+                    <button type="button" class="btn btn-dark mb-3">
                       <a style={{ color: "white" }} href="./cv">
                         Click for CV
                       </a>
@@ -63,7 +63,7 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div class="col-">
+            <div style={{ zIndex: "50" }} class="col">
               <Card></Card>
             </div>
           </div>

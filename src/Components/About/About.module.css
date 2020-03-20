@@ -24,10 +24,9 @@ body {
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    /* margin-left: 35px; */
+    margin-left: 10%;
     padding: 0;
-    width: 100%;
-    z-index: -3;
+    display: inline;
 }
 
 .inline:hover {
@@ -37,12 +36,13 @@ body {
 .inline {
     display: inline-block !important;
     color: white;
-    letter-spacing: -3px;
+    letter-spacing: 3px;
     padding: 0;
     font-size: 55px;
     color: red;
-    margin-left: 12px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    /* margin-left: 12px;
+    margin-bottom: 40px; */
 }
 
 @media (max-width: 837px) {
@@ -50,6 +50,5 @@ body {
         position: absolute;
         top: 70%;
         left: 13%;
-        z-index: -2;
     }
 }
