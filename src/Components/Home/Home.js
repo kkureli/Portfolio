@@ -1,4 +1,4 @@
-import React, { useState, memo } from "react";
+import React, { useEffect } from "react";
 import Button from "react-bootstrap/Button";
 import { Wave } from "react-animated-text";
 import style from "./Home.module.css";
@@ -37,19 +37,15 @@ const ExampleOne = (text, delay) => (
 );
 
 const Home = React.memo(function Home(props) {
-  let hidden = false;
-  // const [hidden, setHidden] = useState(false);
+  useEffect(() => {
+    // code to run on component mount
 
-  // const musicButton = () => {
-  //   console.log({ hidden });
-  //   const player = document.getElementById('player')
-  //   if ({ hidden }.hidden === true) {
-  //     setHidden(false);
-  //   } else {
-  //     player.classList.remove('hidden')
-  //     setHidden(true);
-  //   }
-  // };
+    if (window.innerWidth < 500) {
+      var element = document.getElementById("playerBtn");
+      element.parentNode.removeChild(element);
+    }
+  });
+  let hidden = false;
 
   const musicButton = () => {
     const player = document.getElementById("player");
@@ -121,7 +117,7 @@ const Home = React.memo(function Home(props) {
           </span>
         </div>
         <div>
-          <span>
+          <span className={style.rotator}>
             <ReactTextRotator content={content} time={3000} startDelay={1500} />
           </span>
           <div>
@@ -176,12 +172,19 @@ const Home = React.memo(function Home(props) {
         <code className={style.htmlCcode}>&lt;/ html&gt;</code>
       </div>
       <button
+        id="playerBtn"
         onClick={() => musicButton()}
-        style={{ position: "absolute", bottom: "0px", left: "-144px" }}
+        style={{
+          zIndex: "58",
+          position: "fixed",
+          bottom: "0px",
+          left: "-144px"
+        }}
         type="button"
-        class="btn btn-danger p-0 m-0"
+        class="btn btn-danger p-0 m-0 soundBtn"
       >
         <img
+          style={{ zIndex: "58" }}
           width="44px"
           alt="music"
           src="https://img.icons8.com/wired/64/000000/music.png"

@@ -4,6 +4,8 @@ import { Wave } from "react-animated-text";
 import Card from "react-bootstrap/Card";
 import style from "./Projects.module.css";
 export class Projects extends Component {
+  gs = require("github-scraper");
+
   ExampleOne = (text, delay) => (
     <Wave
       delay={delay}
@@ -18,22 +20,17 @@ export class Projects extends Component {
   state = { projects: [1, 2, 3] };
   newProjects = [];
   componentDidMount() {
-    var gs = require("github-scraper"); // require the module
-    var url = "kkureli/mentorship";
-    gs(url, function(err, data) {
-      console.log(data); // or what ever you want to do with the data
-    });
-    // return axios
-    //   .get(`https://api.github.com/users/kkureli/repos`)
-    //   .then(repos => {
-    //     repos.data.slice(24).map(data => {
-    //       return this.newProjects.push(data);
-    //     });
-    //     this.setState({ projects: this.newProjects });
-    //   })
-    //   .catch(err => {
-    //     throw err;
-    //   });
+    return axios
+      .get(`https://api.github.com/users/kkureli/repos`)
+      .then(repos => {
+        repos.data.slice(24).map(data => {
+          return this.newProjects.push(data);
+        });
+        this.setState({ projects: this.newProjects });
+      })
+      .catch(err => {
+        throw err;
+      });
   }
 
   mapProjects = () => {

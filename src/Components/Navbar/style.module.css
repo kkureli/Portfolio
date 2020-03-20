@@ -15,7 +15,7 @@ body {
     height: 100vh;
     display: block;
     color: white;
-    z-index: 4;
+    /* z-index: 2; */
     color: black;
     position: fixed;
 }
