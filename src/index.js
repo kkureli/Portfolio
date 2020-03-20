@@ -12,16 +12,14 @@ import Projects from "./Components/Projects/Projects";
 
 ReactDOM.render(
   <Router>
-    <div>
-      <Route render={props => <Navbar {...props} />} />
+    <Route render={props => <Navbar {...props} />} />
 
-      <Route exact path="/" render={props => <App {...props} />} />
-      <Route exact path="/home" render={props => <App {...props} />} />
-      <Route exact path="/about" component={About} />
-      <Route exact path="/cv" component={Cv} />
-      <Route exact path="/contact" component={Contact} />
-      <Route exact path="/projects" component={Projects} />
-    </div>
+    <Route exact path="/" render={props => <App {...props} />} />
+    <Route exact path="/home" render={props => <App {...props} />} />
+    <Route exact path="/about" component={About} />
+    <Route exact path="/cv" component={Cv} />
+    <Route exact path="/contact" component={Contact} />
+    <Route exact path="/projects" component={Projects} />
   </Router>,
   document.getElementById("root")
 );

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, memo } from "react";
 import Button from "react-bootstrap/Button";
 import { Wave } from "react-animated-text";
 import style from "./Home.module.css";
@@ -36,7 +36,19 @@ const ExampleOne = (text, delay) => (
   />
 );
 
-const Home = props => {
+const Home = React.memo(function Home(props) {
+  const [hidden, setHidden] = useState(false);
+
+  const musicButton = () => {
+    console.log({ hidden });
+
+    if ({ hidden }.hidden === true) {
+      setHidden(false);
+    } else {
+      setHidden(true);
+    }
+  };
+
   return (
     <div>
       {console.log(props)}{" "}
@@ -148,9 +160,31 @@ const Home = props => {
       <div>
         <code className={style.htmlCcode}>&lt;/ html&gt;</code>
       </div>
-      <Music></Music>
+      <button
+        onClick={() => musicButton()}
+        style={{ position: "absolute", bottom: "0px", left: "-144px" }}
+        type="button"
+        class="btn btn-danger p-0 m-0"
+      >
+        <img
+          width="44px"
+          alt="music"
+          src="https://img.icons8.com/wired/64/000000/music.png"
+        />
+      </button>
+      <div
+        className={`${{ hidden }.hidden ? " " : style.hidden} ${style.music} `}
+      >
+        {" "}
+        <Music></Music>
+      </div>
     </div>
   );
+});
+
+const comprasionFn = function(prevState, nextState) {
+  console.log("prev", prevState);
+  console.log("next", nextState);
 };
 
-export default Home;
+export default React.memo(Home, comprasionFn);
