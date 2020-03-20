@@ -11,8 +11,6 @@ const Navbar = props => {
 
   const [loaded, setLoaded] = useState(true);
 
-  console.log("abc", { loaded });
-
   window.onload = function() {
     setLoaded(false);
   };
@@ -28,8 +26,6 @@ const Navbar = props => {
   }
   // Example("spinningBubbles", "red");
   if ({ loaded }.loaded === true) {
-    console.log("hey");
-
     return (
       <div
         style={{

@@ -37,21 +37,34 @@ const ExampleOne = (text, delay) => (
 );
 
 const Home = React.memo(function Home(props) {
-  const [hidden, setHidden] = useState(false);
+  let hidden = false;
+  // const [hidden, setHidden] = useState(false);
+
+  // const musicButton = () => {
+  //   console.log({ hidden });
+  //   const player = document.getElementById('player')
+  //   if ({ hidden }.hidden === true) {
+  //     setHidden(false);
+  //   } else {
+  //     player.classList.remove('hidden')
+  //     setHidden(true);
+  //   }
+  // };
 
   const musicButton = () => {
-    console.log({ hidden });
+    const player = document.getElementById("player");
 
-    if ({ hidden }.hidden === true) {
-      setHidden(false);
+    if (hidden === true) {
+      hidden = false;
+      player.classList.add("Home_hidden__1rETE");
     } else {
-      setHidden(true);
+      player.classList.remove("Home_hidden__1rETE");
+      hidden = true;
     }
   };
 
   return (
     <div>
-      {console.log(props)}{" "}
       <div>
         <div className={style.dropDown}>
           <Drop></Drop>
@@ -61,7 +74,9 @@ const Home = React.memo(function Home(props) {
       <div>
         <code className={style.h1Ocode}>&lt;h1&gt;</code>
       </div>
-      <SpinningCube></SpinningCube>
+      <span className={style.cube}>
+        <SpinningCube></SpinningCube>
+      </span>
       <div className={style.home}>
         <div className={style.line}>
           <span className={[style.inline, "wobble-skew"].join(" ")}>
@@ -173,18 +188,23 @@ const Home = React.memo(function Home(props) {
         />
       </button>
       <div
-        className={`${{ hidden }.hidden ? " " : style.hidden} ${style.music} `}
+        id="player"
+        className={`${hidden ? " " : style.hidden} ${style.music} `}
       >
         {" "}
-        <Music></Music>
+        <span>
+          {" "}
+          <Music></Music>
+        </span>
       </div>
     </div>
   );
 });
 
-const comprasionFn = function(prevState, nextState) {
-  console.log("prev", prevState);
-  console.log("next", nextState);
-};
+// const comprasionFn = function(prevState, nextState) {
+//   console.log("prev", prevState);
+//   console.log("next", nextState);
+// };
 
-export default React.memo(Home, comprasionFn);
+// export default React.memo(Home, comprasionFn);
+export default Home;

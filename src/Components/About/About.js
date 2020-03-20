@@ -16,12 +16,13 @@ export default function About() {
       effectDirection="up"
     />
   );
+
   return (
-    <div>
-      <div className={style.home}>
+    <div className={style.about}>
+      <div className={style.aboutHome}>
         <div class="container">
           <div class="row">
-            <div class="col">
+            <div class="col-md-6">
               <span className={[style.inline, "wobble-skew"].join(" ")}>
                 {ExampleOne("A", 1)}
               </span>
@@ -43,24 +44,26 @@ export default function About() {
               <span className={[style.inline, "wobble-skew"].join(" ")}>
                 {ExampleOne("e", 1.9)}
               </span>
-              <div class="col">
-                <p>
-                  Frontend web developer with a background in Mechatronics
-                  Engineering. <br /> <br /> Enthusiastic coding bootcamp
-                  graduate who poses comprehensive and practical knowledge of
-                  latest programming technologies. <br /> <br /> Passion for
-                  frontend development opportunities.
-                </p>
-                <div>
-                  <button type="button" class="btn btn-dark ">
-                    <a style={{ color: "white" }} href="./cv">
-                      Click for CV
-                    </a>
-                  </button>
+              <div class="row">
+                <div class="col">
+                  <p>
+                    Frontend web developer with a background in Mechatronics
+                    Engineering. <br /> <br /> Enthusiastic coding bootcamp
+                    graduate who poses comprehensive and practical knowledge of
+                    latest programming technologies. <br /> <br /> Passion for
+                    frontend development opportunities.
+                  </p>
+                  <div>
+                    <button type="button" class="btn btn-dark ">
+                      <a style={{ color: "white" }} href="./cv">
+                        Click for CV
+                      </a>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="col-">
               <Card></Card>
             </div>
           </div>

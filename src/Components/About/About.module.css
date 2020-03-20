@@ -1,14 +1,33 @@
-.home {
-    /* font-size: 55px !important; */
+/* html {
+    overflow-y: scroll;
+}
+
+body {
+    position: absolute;
+} */
+
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    overflow: scroll;
+}
+
+body {
+    position: absolute;
+    overflow: scroll;
+}
+
+.aboutHome {
     font-weight: bold;
     margin: 0;
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    margin-left: 35px;
+    /* margin-left: 35px; */
     padding: 0;
     width: 100%;
+    z-index: -3;
 }
 
 .inline:hover {
@@ -24,4 +43,13 @@
     color: red;
     margin-left: 12px;
     margin-bottom: 40px;
+}
+
+@media (max-width: 837px) {
+    .aboutHome {
+        position: absolute;
+        top: 70%;
+        left: 13%;
+        z-index: -2;
+    }
 }
