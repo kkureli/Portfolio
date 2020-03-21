@@ -60,7 +60,7 @@ const Home = React.memo(function Home(props) {
   };
 
   return (
-    <div>
+    <div className={style.homePage}>
       <div>
         <div className={style.dropDown}>
           <Drop></Drop>

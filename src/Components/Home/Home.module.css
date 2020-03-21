@@ -169,8 +169,18 @@ label {
     }
 } */
 
-@media (min-width: 481px) {
+@media (max-width: 500px) {
     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    .homePage {
+        margin-top: 35px;
+        margin-left: -30px;
+        font-size: 40%;
+        padding: 11px;
+    }
+    .htmlCcode {
+        top: -4px;
+        left: -60px;
+    }
 }
 
 @media (min-width: 641px) {
