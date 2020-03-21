@@ -4,8 +4,6 @@ import { Wave } from "react-animated-text";
 import Card from "react-bootstrap/Card";
 import style from "./Projects.module.css";
 export class Projects extends Component {
-  gs = require("github-scraper");
-
   ExampleOne = (text, delay) => (
     <Wave
       delay={delay}
@@ -17,21 +15,6 @@ export class Projects extends Component {
       effectDirection="up"
     />
   );
-  state = { projects: [1, 2, 3] };
-  newProjects = [];
-  // componentDidMount() {
-  //   return axios
-  //     .get(`https://api.github.com/users/kkureli/repos`)
-  //     .then(repos => {
-  //       repos.data.slice(24).map(data => {
-  //         return this.newProjects.push(data);
-  //       });
-  //       this.setState({ projects: this.newProjects });
-  //     })
-  //     .catch(err => {
-  //       throw err;
-  //     });
-  // }
 
   render() {
     return (
