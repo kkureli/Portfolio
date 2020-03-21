@@ -19,50 +19,19 @@ export class Projects extends Component {
   );
   state = { projects: [1, 2, 3] };
   newProjects = [];
-  componentDidMount() {
-    return axios
-      .get(`https://api.github.com/users/kkureli/repos`)
-      .then(repos => {
-        repos.data.slice(24).map(data => {
-          return this.newProjects.push(data);
-        });
-        this.setState({ projects: this.newProjects });
-      })
-      .catch(err => {
-        throw err;
-      });
-  }
-
-  mapProjects = () => {
-    return this.state.projects.map(project => {
-      console.log(project.title);
-      return (
-        <div class="col-xs-1-12">
-          <Card
-            className={"m-2"}
-            bg={"dark"}
-            text={"white"}
-            style={{ width: "18rem" }}
-          >
-            <Card.Body>
-              <Card.Title>
-                <h3>Project Title: </h3> {project.name}
-              </Card.Title>
-              <Card.Subtitle className="mb-2 ">
-                Made by {project.language}
-              </Card.Subtitle>
-              <Card.Text></Card.Text>
-              <Card.Link target="__blank" href={project.html_url}>
-                <button mb-0 p-0 type="button" class="btn btn-danger">
-                  <span style={{ color: "black" }}>Go To Project</span>
-                </button>
-              </Card.Link>
-            </Card.Body>
-          </Card>
-        </div>
-      );
-    });
-  };
+  // componentDidMount() {
+  //   return axios
+  //     .get(`https://api.github.com/users/kkureli/repos`)
+  //     .then(repos => {
+  //       repos.data.slice(24).map(data => {
+  //         return this.newProjects.push(data);
+  //       });
+  //       this.setState({ projects: this.newProjects });
+  //     })
+  //     .catch(err => {
+  //       throw err;
+  //     });
+  // }
 
   render() {
     return (
@@ -94,7 +63,128 @@ export class Projects extends Component {
               <span className={[style.inline, "wobble-skew"].join(" ")}>
                 {this.ExampleOne("s", 1.9)}
               </span>
-              <div class="row">{this.mapProjects()}</div>
+              <div class="row">
+                <div class="col-xs-1-12">
+                  <Card
+                    className={"m-2"}
+                    bg={"dark"}
+                    text={"white"}
+                    style={{ width: "18rem" }}
+                  >
+                    <Card.Body>
+                      <Card.Title>
+                        <h3 style={{ color: "red" }}>Mentorship</h3>
+                      </Card.Title>
+                      <Card.Subtitle className="mb-2 ">
+                        <ul>
+                          <li>HTML/CSS</li>
+                          <li>Vanilla JS</li>
+                          <li>Firebase Auth and Firestore Database</li>
+                        </ul>
+                      </Card.Subtitle>
+                      <Card.Text>
+                        <p>
+                          Small website that allows you to find a Mentor/Mentee
+                          with the time that suits you and connect with them
+                          really easy
+                        </p>
+                        <p>
+                          You can visit the website live{" "}
+                          <span>
+                            <a href="https://osamaakb.github.io/mentorship/">
+                              here
+                            </a>
+                          </span>{" "}
+                        </p>
+                        <span style={{ fontStyle: "italic" }}>
+                          This website was developed by the students of the
+                          recoded bootcamp in Istanbul/Turkey
+                        </span>
+                      </Card.Text>
+                      <Card.Link
+                        target="__blank"
+                        href="https://github.com/kkureli/mentorship"
+                      >
+                        <button mb-0 p-0 type="button" class="btn btn-danger">
+                          <span style={{ color: "black" }}>Go To Project</span>
+                        </button>
+                      </Card.Link>
+                    </Card.Body>
+                  </Card>
+                </div>
+                <div class="col-xs-1-12">
+                  <Card
+                    className={"m-2"}
+                    bg={"dark"}
+                    text={"white"}
+                    style={{ width: "18rem" }}
+                  >
+                    <Card.Body>
+                      <Card.Title>
+                        <h3 style={{ color: "red" }}>Pizza Form</h3>
+                      </Card.Title>
+                      <Card.Subtitle className="mb-2 ">
+                        <ul>
+                          <li>HTML/CSS</li>
+                          <li>JS</li>
+                          <li>MaterialUI</li>
+                          <li>ReactJS</li>
+                        </ul>
+                      </Card.Subtitle>
+                      <Card.Text>
+                        This is a project that for get and update order for
+                        pizza restaurant. It' not a real project. This web
+                        application connect with virtual database and keep every
+                        updates.
+                      </Card.Text>
+                      <Card.Link
+                        target="__blank"
+                        href="https://github.com/kkureli/React-Pizza"
+                      >
+                        <button mb-0 p-0 type="button" class="btn btn-danger">
+                          <span style={{ color: "black" }}>Go To Project</span>
+                        </button>
+                      </Card.Link>
+                    </Card.Body>
+                  </Card>
+                </div>
+                <div class="col-xs-1-12">
+                  <Card
+                    className={"m-2"}
+                    bg={"dark"}
+                    text={"white"}
+                    style={{ width: "18rem" }}
+                  >
+                    <Card.Body>
+                      <Card.Title>
+                        <h3 style={{ color: "red" }}>Basic Movie Website</h3>
+                      </Card.Title>
+                      <Card.Subtitle className="mb-2 ">
+                        <ul>
+                          <li>HTML/CSS</li>
+                          <li>JS</li>
+                          <li>ReactJS</li>
+                        </ul>
+                      </Card.Subtitle>
+                      <Card.Text>
+                        <p>
+                          This website using Movie Database API and keep update
+                          always. Wrapped with bootstrap easy to use and fast.
+                          It can improve and add more functionalty if needed.
+                        </p>
+                      </Card.Text>
+                      <Card.Link
+                        target="__blank"
+                        href="https://github.com/kkureli/movie-explorer"
+                      >
+                        <button mb-0 p-0 type="button" class="btn btn-danger">
+                          <span style={{ color: "black" }}>Go To Project</span>
+                        </button>
+                      </Card.Link>
+                    </Card.Body>
+                  </Card>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -3,23 +3,27 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./Components/Home/App";
 import * as serviceWorker from "./serviceWorker";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import About from "./Components/About/About";
 import Cv from "./Components/About/Pdf";
 import Contact from "./Components/Contact/Contact";
 import Projects from "./Components/Projects/Projects";
+// import { Switch } from "@material-ui/core";
 
 ReactDOM.render(
-  <Router>
-    <Route render={props => <Navbar {...props} />} />
-
-    <Route exact path="/" render={props => <App {...props} />} />
-    <Route exact path="/home" render={props => <App {...props} />} />
-    <Route exact path="/about" component={About} />
-    <Route exact path="/cv" component={Cv} />
-    <Route exact path="/contact" component={Contact} />
-    <Route exact path="/projects" component={Projects} />
+  <Router basename={"Portfolio"}>
+    <div>
+      <Route render={props => <Navbar {...props} />} />
+      <Switch>
+        <Route exact path="/" render={props => <App {...props} />} />
+        <Route exact path="/home" render={props => <App {...props} />} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/cv" component={Cv} />
+        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/projects" component={Projects} />
+      </Switch>
+    </div>
   </Router>,
   document.getElementById("root")
 );
