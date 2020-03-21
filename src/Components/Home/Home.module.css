@@ -157,18 +157,6 @@ label {
 
 /* mobile */
 
-
-/* @media (min-width: 320px) {
-    body {
-        font-size: 50%;
-    }
-    .home {
-        width: 100%;
-        font-size: 20px;
-        size: 40px;
-    }
-} */
-
 @media (max-width: 450px) {
     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
     .homePage {
