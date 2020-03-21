@@ -94,7 +94,7 @@ canvas {
 .dropDown {
     display: flex;
     position: absolute;
-    right: -810px;
+    right: -260%;
     top: 0px;
 }
 
@@ -169,7 +169,7 @@ label {
     }
 } */
 
-@media (max-width: 500px) {
+@media (max-width: 450px) {
     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
     .homePage {
         margin-top: -90px;
@@ -181,6 +181,10 @@ label {
         top: -4px;
         left: -60px;
     }
+    /* #playerBtn {
+        position: absolute;
+        bottom: 1px;
+    } */
 }
 
 @media (min-width: 641px) {

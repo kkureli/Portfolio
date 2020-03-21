@@ -196,7 +196,6 @@ const Home = React.memo(function Home(props) {
       >
         {" "}
         <span>
-          {" "}
           <Music></Music>
         </span>
       </div>
