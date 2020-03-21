@@ -172,7 +172,7 @@ label {
 @media (max-width: 500px) {
     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
     .homePage {
-        margin-top: 35px;
+        margin-top: -90px;
         margin-left: -30px;
         font-size: 40%;
         padding: 11px;
