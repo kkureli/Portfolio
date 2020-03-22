@@ -15,7 +15,7 @@ body {
     height: 100vh;
     display: block;
     color: white;
-    z-index: 20;
+    /* z-index: 20; */
     color: black;
     position: fixed;
     /* overflow-y: scroll;
