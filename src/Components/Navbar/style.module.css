@@ -64,5 +64,6 @@ body {
 }
 
 .social {
-    padding-top: 125px;
+    position: absolute;
+    bottom: 50px;
 }

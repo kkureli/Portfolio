@@ -48,7 +48,7 @@ body {
 @media (max-width: 837px) {
     .aboutHome {
         position: absolute;
-        top: 70%;
+        top: 75%;
         left: 13%;
     }
 }
