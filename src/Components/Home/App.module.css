@@ -17,5 +17,5 @@ body {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     margin-left: 150px;
-    z-index: -4;
+    z-index: 4;
 }

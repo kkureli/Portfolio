@@ -175,10 +175,10 @@ const Home = React.memo(function Home(props) {
         id="playerBtn"
         onClick={() => musicButton()}
         style={{
-          zIndex: "58",
-          position: "fixed",
+          zIndex: "580",
+          position: "absolute",
           bottom: "0px",
-          left: "-144px"
+          left: "-143px"
         }}
         type="button"
         class="btn btn-danger p-0 m-0 soundBtn"

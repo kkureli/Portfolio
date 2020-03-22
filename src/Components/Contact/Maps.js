@@ -38,6 +38,12 @@ class Maps extends Component {
             <div>
               <h1 style={{ color: "red", backgroundColor: "" }}>
                 Kaan is here!
+                <p style={{ fontStyle: "italic", fontSize: "13px" }}>
+                  +905369790195
+                </p>
+                <p style={{ fontStyle: "italic", fontSize: "13px" }}>
+                  kkureli@gmail.com
+                </p>
               </h1>
             </div>
           </InfoWindow>
