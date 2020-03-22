@@ -51,7 +51,7 @@ export default function Contact() {
               <Form></Form>
             </div>
           </div>
-          <div class="col-md-6 ">
+          <div style={{ zIndex: "50" }} class="col-md-6 ">
             <p className={style.maps}>
               <Maps></Maps>
             </p>

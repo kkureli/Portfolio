@@ -3,8 +3,8 @@ import React from "react";
 export default function Form() {
   return (
     <div>
-      <form action="mailto:kkureli@gmail.com" method="post">
-        <div class="card border-dark     rounded-3">
+      <form  action="mailto:kkureli@gmail.com" method="post">
+        <div class="card border-dark rounded-3">
           <div class="card-header p-0">
             <div class="bg-dark text-white text-center py-2">
               <h3>

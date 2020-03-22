@@ -40,3 +40,7 @@
         height: 100px;
     }
 }
+
+body {
+    z-index: -7;
+}
