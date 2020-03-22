@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import axios from "axios";
 import { Wave } from "react-animated-text";
 import Card from "react-bootstrap/Card";
 import style from "./Projects.module.css";
