@@ -6,6 +6,8 @@ import ReactTextRotator from "react-text-rotator";
 import SpinningCube from "./Pyramid/SpinningCube";
 import Drop from "./ColorDropDown";
 import Music from "./Music/Music";
+import { Route, Link } from "react-router-dom";
+
 const content = [
   {
     text: "react",
@@ -161,10 +163,9 @@ const Home = React.memo(function Home(props) {
           Front End Web Developer / Freelancer
         </h2>
         <div>
-          <a href="./contact">
-            {" "}
+          <Link to="./contact">
             <Button variant="danger">CONTACT ME</Button>
-          </a>
+          </Link>
         </div>
       </div>
       <code className={style.codyCcode}>&lt;/ body&gt;</code>

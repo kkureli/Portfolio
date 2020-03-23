@@ -7,6 +7,7 @@
         "@fullpage/react-fullpage": "^0.1.17",
         "@material-ui/core": "^4.9.5",
         "@material-ui/icons": "^4.9.1",
+        "@steveeeie/react-page-transition": "^1.1.2",
         "@testing-library/jest-dom": "^4.2.4",
         "@testing-library/react": "^9.5.0",
         "@testing-library/user-event": "^7.2.1",
@@ -27,8 +28,11 @@
         "react-loading": "^2.0.3",
         "react-pdf": "^4.1.0",
         "react-router-dom": "^5.1.2",
+        "react-router-transition": "^2.0.0",
         "react-scripts": "3.4.0",
-        "react-text-rotator": "^0.1.1"
+        "react-text-rotator": "^0.1.1",
+        "react-tiger-transition": "^4.1.2",
+        "styled-components": "^5.0.1"
     },
     "scripts": {
         "start": "react-scripts start",

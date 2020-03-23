@@ -2,6 +2,7 @@ import React from "react";
 
 import { Wave } from "react-animated-text";
 import Card from "./CardComponent";
+import { Route, Link } from "react-router-dom";
 
 import style from "./About.module.css";
 export default function About() {
@@ -55,9 +56,9 @@ export default function About() {
                   </p>
                   <div>
                     <button type="button" class="btn btn-dark mb-3">
-                      <a style={{ color: "white" }} href="./cv">
+                      <Link to="./cv" style={{ color: "white" }}>
                         Click for CV
-                      </a>
+                      </Link>
                     </button>
                   </div>
                 </div>
