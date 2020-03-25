@@ -1,11 +1,10 @@
 import React from "react";
-
 import { Wave } from "react-animated-text";
 import Card from "./CardComponent";
 import { Route, Link } from "react-router-dom";
-
 import style from "./About.module.css";
-export default function About() {
+
+const About = React.memo(function About(props) {
   const ExampleOne = (text, delay) => (
     <Wave
       delay={delay}
@@ -69,13 +68,9 @@ export default function About() {
             </div>
           </div>
         </div>
-
-        {/* <code className={style.bodyOcode}>&lt;body&gt;</code>
-        <code className={style.h1Ocode}>&lt;h1&gt;</code>
-        <code className={style.h1Ccode}>&lt;h1&gt;</code>
-        <code className={style.codyCcode}>&lt;/ body&gt;</code>
-        <code className={style.htmlCcode}>&lt;/ html&gt;</code> */}
       </div>
     </div>
   );
-}
+});
+
+export default About;

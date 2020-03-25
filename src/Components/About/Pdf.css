@@ -9,6 +9,27 @@
     width: 100%;
 } */
 
+.pdfHome {
+    position: absolute;
+}
+
+
+/* html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    overflow: scroll;
+}
+
+body {
+    position: absolute;
+    overflow: scroll;
+} */
+
+
+/* .pdfHome {
+    width: 50%!important;
+} */
+
 .react-pdf__Page {
     height: 700px;
 }

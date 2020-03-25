@@ -3,7 +3,8 @@ import style from "./Contact.module.css";
 import { Wave } from "react-animated-text";
 import Maps from "./Maps";
 import Form from "./Form";
-export default function Contact() {
+
+const Contact = React.memo(function Contact(props) {
   const ExampleOne = (text, delay) => (
     <Wave
       delay={delay}
@@ -60,4 +61,6 @@ export default function Contact() {
       </div>
     </div>
   );
-}
+});
+
+export default Contact;

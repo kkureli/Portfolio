@@ -1,6 +1,10 @@
 .home {
     display: inline-block;
     margin-left: 12.5%;
+    position: absolute;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    margin-top: 2%;
 }
 
 .inline:hover {
@@ -16,4 +20,10 @@
     color: red;
     margin-left: 12px;
     margin-bottom: 40px;
+}
+
+@media (max-width: 837px) {
+    .home {
+        padding-left: 9%;
+    }
 }

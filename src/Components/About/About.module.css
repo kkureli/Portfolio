@@ -1,22 +1,3 @@
-/* html {
-    overflow-y: scroll;
-}
-
-body {
-    position: absolute;
-} */
-
-html {
-    overflow-y: scroll;
-    overflow-x: hidden;
-    overflow: scroll;
-}
-
-body {
-    position: absolute;
-    overflow: scroll;
-}
-
 .aboutHome {
     font-weight: bold;
     margin: 0;
@@ -26,7 +7,6 @@ body {
     transform: translateY(-50%);
     margin-left: 10%;
     padding: 0;
-    display: inline;
 }
 
 .inline:hover {
@@ -48,7 +28,8 @@ body {
 @media (max-width: 837px) {
     .aboutHome {
         position: absolute;
-        top: 75%;
+        top: 85%;
         left: 13%;
+        padding-bottom: 100px;
     }
 }
