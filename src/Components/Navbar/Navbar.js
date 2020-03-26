@@ -35,11 +35,11 @@ const Navbar = props => {
           display: "flex",
           alignItems: "center",
           marginTop: "20%",
-          zIndex: "-2",
+          zIndex: "200",
           width: "60px"
         }}
       >
-        <ReactLoading type={"spokes"} color="#FFFF" />
+        <img src={require("./831.png")} alt="" />
       </div>
     );
   } else {
