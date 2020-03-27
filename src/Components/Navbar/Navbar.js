@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import style from "./style.module.css";
 import { Route, Link } from "react-router-dom";
-import ReactLoading from "react-loading";
 
 const Navbar = props => {
   let home = false;

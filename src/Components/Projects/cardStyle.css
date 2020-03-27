@@ -1,0 +1,36 @@
+.section-box-ten {
+    background: radial-gradient(#6e6e6e, #2f2f2f);
+    background: -webkit-radial-gradient(#6e6e6e, #2f2f2f);
+    background: -moz-radial-gradient(#6e6e6e, #2f2f2f);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-box-ten figure {
+    position: absolute;
+    text-align: left;
+    padding: 10px 19px 19px 19px;
+    width: 130%;
+    height: 101%;
+    border-top: 1px solid #fff;
+    background: rgba(0, 0, 0, 0.71);
+    bottom: -89%;
+    transition: ease-in-out .5s;
+}
+
+.section-box-ten:hover figure {
+    padding-bottom: 0;
+    bottom: -15.5px;
+}
+
+.section-box-ten figure h3 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+@media (max-width:1200px) {
+    .projectCard {
+        margin-top: 10px;
+    }
+}
