@@ -20,7 +20,10 @@ const Projects = React.memo(function Projects(props) {
       <div class="container">
         <div class="row">
           <div class="col">
-            <span className={[style.inline, "wobble-skew"].join(" ")}>
+            <span
+              style={{ marginLeft: "0" }}
+              className={[style.inline, "wobble-skew"].join(" ")}
+            >
               {ExampleOne("P", 1)}
             </span>
             <span className={[style.inline, "wobble-skew"].join(" ")}>
@@ -44,8 +47,12 @@ const Projects = React.memo(function Projects(props) {
             <span className={[style.inline, "wobble-skew"].join(" ")}>
               {ExampleOne("s", 1.9)}
             </span>
+            <p>
+              Here is a list of the projects I have done by myself or with a
+              team.
+            </p>
             <div class="row">
-              <div class="col-xs-1-12">
+              <div class="col-xs-1-12 ">
                 <Card
                   className={"m-2"}
                   bg={"dark"}
@@ -72,7 +79,10 @@ const Projects = React.memo(function Projects(props) {
                       <p>
                         You can visit the website live{" "}
                         <span>
-                          <a href="https://osamaakb.github.io/mentorship/">
+                          <a
+                            target="__blank"
+                            href="https://osamaakb.github.io/mentorship/"
+                          >
                             here
                           </a>
                         </span>{" "}

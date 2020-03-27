@@ -16,6 +16,7 @@ const Contact = React.memo(function Contact(props) {
       effectDirection="up"
     />
   );
+
   return (
     <div className={style.home}>
       <div class="container">
@@ -48,7 +49,15 @@ const Contact = React.memo(function Contact(props) {
             <span className={[style.inline, "wobble-skew"].join(" ")}>
               {ExampleOne("e", 2)}
             </span>
-            <div class="col">
+            <div>
+              <p>
+                I am interested in freelance opportunities – especially
+                ambitious or large projects. However, if you have other request
+                or question, don’t hesitate to contact me using below form
+                either.
+              </p>
+            </div>
+            <div class="col p-0">
               <Form></Form>
             </div>
           </div>
