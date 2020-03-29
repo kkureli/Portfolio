@@ -31,6 +31,12 @@ body {
     margin-bottom: 55px;
 }
 
+@media (min-width: 992px) and (max-width: 1202px) {
+    .home {
+        margin-left: 50px;
+    }
+}
+
 @media (max-width: 992px) {
     .inline {
         font-size: 290%;
