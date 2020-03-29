@@ -1,30 +1,32 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.7aad2fdf.chunk.css",
-    "main.js": "/Portfolio/static/js/main.32398fa2.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.32398fa2.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.ddec87f7.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.ddec87f7.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.9c9419ad.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.9c9419ad.js.map",
-    "static/js/2.76755d10.chunk.js": "/Portfolio/static/js/2.76755d10.chunk.js",
-    "static/js/2.76755d10.chunk.js.map": "/Portfolio/static/js/2.76755d10.chunk.js.map",
+    "static/js/2.e0cf8df7.chunk.js": "/Portfolio/static/js/2.e0cf8df7.chunk.js",
+    "static/js/2.e0cf8df7.chunk.js.map": "/Portfolio/static/js/2.e0cf8df7.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.a2247241003345d8c559a4cffd88c290.js": "/Portfolio/precache-manifest.a2247241003345d8c559a4cffd88c290.js",
+    "precache-manifest.ceebf1b519256933b019d8db2d35f841.js": "/Portfolio/precache-manifest.ceebf1b519256933b019d8db2d35f841.js",
     "service-worker.js": "/Portfolio/service-worker.js",
     "static/css/main.7aad2fdf.chunk.css.map": "/Portfolio/static/css/main.7aad2fdf.chunk.css.map",
-    "static/js/2.76755d10.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.76755d10.chunk.js.LICENSE.txt",
+    "static/js/2.e0cf8df7.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.e0cf8df7.chunk.js.LICENSE.txt",
     "static/media/831.png": "/Portfolio/static/media/831.54cd63e7.png",
     "static/media/burger.png": "/Portfolio/static/media/burger.70044fa9.png",
+    "static/media/calculator.png": "/Portfolio/static/media/calculator.fe7577a4.png",
     "static/media/pyramid.css": "/Portfolio/static/media/rjs.2ff1c121.png",
     "static/media/cv.pdf": "/Portfolio/static/media/cv.11217b0b.pdf",
     "static/media/foto.jpg": "/Portfolio/static/media/foto.bdd43959.jpg",
     "static/media/mentorship.png": "/Portfolio/static/media/mentorship.a043d95b.png",
     "static/media/movie-explorer.png": "/Portfolio/static/media/movie-explorer.2087dc09.png",
-    "static/media/pizza.gif": "/Portfolio/static/media/pizza.eec01d5f.gif"
+    "static/media/pizza.gif": "/Portfolio/static/media/pizza.eec01d5f.gif",
+    "static/media/todo.png": "/Portfolio/static/media/todo.e7ab8e21.png"
   },
   "entrypoints": [
     "static/js/runtime-main.9c9419ad.js",
-    "static/js/2.76755d10.chunk.js",
+    "static/js/2.e0cf8df7.chunk.js",
     "static/css/main.7aad2fdf.chunk.css",
-    "static/js/main.32398fa2.chunk.js"
+    "static/js/main.ddec87f7.chunk.js"
   ]
 }
