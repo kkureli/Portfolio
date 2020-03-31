@@ -25,5 +25,13 @@
 @media (max-width: 837px) {
     .home {
         padding-left: 9%;
+        position: absolute;
+        display: block;
+        margin-left: 20px;
+        /* margin-top: 6%; */
+        width: 95%;
     }
 }
+
+
+/* cardlarin responsive ayari index.css'de */

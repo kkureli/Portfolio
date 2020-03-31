@@ -50,8 +50,8 @@ const About = React.memo(function About(props) {
                     Frontend web developer with a background in Mechatronics
                     Engineering. <br /> <br /> Enthusiastic coding bootcamp
                     graduate who poses comprehensive and practical knowledge of
-                    latest programming technologies. <br /> <br /> Passion for
-                    frontend development opportunities.
+                    latest programming technologies. <br /> <br /> Passionate
+                    for frontend development opportunities.
                   </p>
                   <div>
                     <button type="button" class="btn btn-dark mb-3">

@@ -179,7 +179,7 @@ const Home = React.memo(function Home(props) {
           zIndex: "580",
           position: "absolute",
           bottom: "0px",
-          left: "-143px"
+          left: "-48.2%"
         }}
         type="button"
         class="btn btn-danger p-0 m-0 soundBtn"

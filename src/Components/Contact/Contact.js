@@ -51,10 +51,9 @@ const Contact = React.memo(function Contact(props) {
             </span>
             <div>
               <p>
-                I am interested in freelance opportunities – especially
-                ambitious or large projects. However, if you have other request
-                or question, don’t hesitate to contact me using below form
-                either.
+                I am interested in freelance, remote or full-time opportunities
+                and projects. However, if you have other request or question,
+                don’t hesitate to contact me using below form either.
               </p>
             </div>
             <div class="col p-0">

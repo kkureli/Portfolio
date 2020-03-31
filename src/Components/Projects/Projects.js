@@ -66,8 +66,9 @@ const Projects = React.memo(function Projects(props) {
                       </ul>
                       <p>
                         Small website that allows you to find a Mentor/Mentee
-                        with the time <br /> that suits you and connect with
-                        them really easy
+                        with the
+                        <br /> time that suits you and connect with them really
+                        easy
                       </p>
                       <p>
                         You can visit the website live{" "}
@@ -275,7 +276,10 @@ const Projects = React.memo(function Projects(props) {
                 >
                   <div style={{ width: "500px" }} class="section-box-ten">
                     <figure>
-                      <h3>Burger Builder & Order (Demo)</h3>
+                      <h3>
+                        Burger Builder & Order{" "}
+                        <span id="burgerDemoTitle">(Demo)</span>{" "}
+                      </h3>
                       <p>
                         The Burger Builder is a React application designed as
                         part of <br /> learning React.js. This application is a
@@ -497,7 +501,7 @@ const Projects = React.memo(function Projects(props) {
                         database of orders can be found in a json-server, <br />{" "}
                         under http://localhost:3000/pizzas.{" "}
                         <span style={{ fontStyle: "italic" }}>
-                          Make sure that before you fire up <br /> your React
+                          Make sure that before you <br /> fire up your React
                           server, you first fire up your json-server.
                         </span>
                       </p>

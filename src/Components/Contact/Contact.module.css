@@ -47,8 +47,9 @@ body {
     .home {
         position: absolute;
         display: block;
-        margin-left: 20px;
+        margin-left: 70px;
         /* margin-top: 6%; */
+        width: 80%;
     }
 }
 
