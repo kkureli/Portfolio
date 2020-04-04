@@ -11,4 +11,7 @@
     #burgerDemoTitle {
         display: none;
     }
+    #todoDescSpanMobile {
+        display: none !important;
+    }
 }

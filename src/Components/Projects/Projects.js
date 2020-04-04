@@ -270,7 +270,7 @@ const Projects = React.memo(function Projects(props) {
                 <div
                   style={{
                     marginTop: "20px",
-                    width: "540px"
+                    width: "540px",
                   }}
                   class="col-md-4 center-block projectCard"
                 >
@@ -359,41 +359,68 @@ const Projects = React.memo(function Projects(props) {
                 <div
                   style={{
                     marginTop: "20px",
-                    width: "540px"
+                    width: "540px",
                   }}
                   class="col-md-4 center-block projectCard"
                 >
                   <div style={{ width: "500px" }} class="section-box-ten">
                     <figure>
-                      <h3>ToDo List App (Redux)</h3>
+                      <h3>ToDo List App (Redux, Firebase)</h3>
                       <p>
-                        Classic application Todo List, which is based on
-                        React.js + Redux
+                        ToDo App website which is based on Redux
+                        middleware-thunk, <br /> Firestore for database,
+                        Firebase for authentication and <br /> cloud functions
+                        for notifications.
+                        <span id="todoDescSpanMobile">
+                          Homepage was built for public <br />
+                          usage. After you signup and login you can reach
+                          personal todo <br /> list page for private usage.
+                        </span>
                       </p>
                       <p>
-                        You can visit the website live{" "}
+                        Basic: You can visit the website live{" "}
                         <span>
                           <a
                             target="__blank"
                             href="https://kkureli.github.io/ToDoAppRedux/"
                           >
                             here
+                          </a>{" "}
+                          <span>| </span>
+                          <a
+                            target="__blank"
+                            href="https://github.com/kkureli/ToDoAppRedux"
+                          >
+                            Github Repo
                           </a>
                         </span>{" "}
                       </p>
-                      <a
-                        target="__blank"
-                        href="https://github.com/kkureli/ToDoAppRedux"
-                      >
-                        Github Project Link
-                      </a>
+
+                      <p>
+                        Advanced: You can visit the website live{" "}
+                        <span>
+                          <a
+                            target="__blank"
+                            href="https://todo-app-38640.web.app/"
+                          >
+                            here
+                          </a>{" "}
+                          <span>| </span>
+                          <a
+                            target="__blank"
+                            href="https://github.com/kkureli/ToDoApp-Firebase"
+                          >
+                            Github Repo
+                          </a>
+                        </span>{" "}
+                      </p>
                     </figure>
                     <div style={{ width: "540px" }}>
                       <img
                         width="93%"
                         height="290px"
                         alt="mentor"
-                        src={require("./todo.png")}
+                        src={require("./todog.gif")}
                         class="img-responsive"
                       />
                     </div>
@@ -439,7 +466,7 @@ const Projects = React.memo(function Projects(props) {
                 <div
                   style={{
                     marginTop: "20px",
-                    width: "540px"
+                    width: "540px",
                   }}
                   class="col-md-4 center-block projectCard"
                 >

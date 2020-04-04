@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import style from "./style.module.css";
 import { Route, Link } from "react-router-dom";
 
-const Navbar = props => {
+const Navbar = (props) => {
   let home = false;
   let contact = false;
   let about = false;
@@ -10,7 +10,7 @@ const Navbar = props => {
 
   const [loaded, setLoaded] = useState(true);
 
-  window.onload = function() {
+  window.onload = function () {
     setLoaded(false);
   };
 
@@ -35,7 +35,7 @@ const Navbar = props => {
           alignItems: "center",
           marginTop: "20%",
           zIndex: "200",
-          width: "60px"
+          width: "60px",
         }}
       >
         <img src={require("./831.png")} alt="" />
@@ -115,6 +115,15 @@ const Navbar = props => {
                   className={style.icons}
                   src={require("./git.png")}
                 />
+              </a>
+            </li>
+            <li>
+              <a target="__blank" href="https://medium.com/@kaankureli">
+                <img
+                  className={style.icons}
+                  src="https://s18955.pcdn.co/wp-content/uploads/2018/02/medium.png"
+                  alt=""
+                />{" "}
               </a>
             </li>
           </div>
