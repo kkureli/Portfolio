@@ -267,113 +267,6 @@ const Projects = React.memo(function Projects(props) {
                   </Card.Body>
                 </Card> */}
 
-                <div class="col-xs-1-12">
-                  {/* <Card
-                  className={"m-2"}
-                  bg={"dark"}
-                  text={"white"}
-                  style={{ width: "18rem" }}
-                >
-                  <Card.Body>
-                    <Card.Title>
-                      <h3 style={{ color: "red" }}>Basic Movie Website</h3>
-                    </Card.Title>
-                    <Card.Subtitle className="mb-2 ">
-                      <ul>
-                        <li>HTML/CSS</li>
-                        <li>JS</li>
-                        <li>ReactJS</li>
-                      </ul>
-                    </Card.Subtitle>
-                    <Card.Text>
-                      <p>
-                        This website using Movie Database API and keep update
-                        always. Wrapped with bootstrap easy to use and fast. It
-                        can improve and add more functionalty if needed.
-                      </p>
-                    </Card.Text>
-                    <Card.Link
-                      target="__blank"
-                      href="https://github.com/kkureli/movie-explorer"
-                    >
-                      <button mb-0 p-0 type="button" class="btn btn-danger">
-                        <span style={{ color: "black" }}>Go To Project</span>
-                      </button>
-                    </Card.Link>
-                  </Card.Body>
-                </Card> */}
-
-                  <div
-                    style={{
-                      marginTop: "20px",
-                      width: "540px",
-                    }}
-                    class="col-md-4 center-block projectCard"
-                  >
-                    <div style={{ width: "500px" }} class="section-box-ten">
-                      <figure>
-                        <h3>ToDo List App (Redux, Firebase)</h3>
-                        <p>
-                          ToDo App website which is based on Redux
-                          middleware-thunk, <br /> Firestore for database,
-                          Firebase for authentication and <br /> cloud functions
-                          for notifications.
-                          <span id="todoDescSpanMobile">
-                            Homepage was built for public <br />
-                            usage. After you signup and login you can reach
-                            personal todo <br /> list page for private usage.
-                          </span>
-                        </p>
-                        <p>
-                          Basic: You can visit the website live{" "}
-                          <span>
-                            <a
-                              target="__blank"
-                              href="https://kkureli.github.io/ToDoAppRedux/"
-                            >
-                              here
-                            </a>{" "}
-                            <span>| </span>
-                            <a
-                              target="__blank"
-                              href="https://github.com/kkureli/ToDoAppRedux"
-                            >
-                              Github Repo
-                            </a>
-                          </span>{" "}
-                        </p>
-
-                        <p>
-                          Advanced: You can visit the website live{" "}
-                          <span>
-                            <a
-                              target="__blank"
-                              href="https://todo-app-38640.web.app/"
-                            >
-                              here
-                            </a>{" "}
-                            <span>| </span>
-                            <a
-                              target="__blank"
-                              href="https://github.com/kkureli/ToDoApp-Firebase"
-                            >
-                              Github Repo
-                            </a>
-                          </span>{" "}
-                        </p>
-                      </figure>
-                      <div style={{ width: "540px" }}>
-                        <img
-                          width="93%"
-                          height="290px"
-                          alt="mentor"
-                          src={require("./todog.gif")}
-                          class="img-responsive"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
                 <div
                   style={{
                     marginTop: "20px",
@@ -421,6 +314,113 @@ const Projects = React.memo(function Projects(props) {
                         height="290px"
                         alt="mentor"
                         src={require("./burger.png")}
+                        class="img-responsive"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-1-12">
+                {/* <Card
+                  className={"m-2"}
+                  bg={"dark"}
+                  text={"white"}
+                  style={{ width: "18rem" }}
+                >
+                  <Card.Body>
+                    <Card.Title>
+                      <h3 style={{ color: "red" }}>Basic Movie Website</h3>
+                    </Card.Title>
+                    <Card.Subtitle className="mb-2 ">
+                      <ul>
+                        <li>HTML/CSS</li>
+                        <li>JS</li>
+                        <li>ReactJS</li>
+                      </ul>
+                    </Card.Subtitle>
+                    <Card.Text>
+                      <p>
+                        This website using Movie Database API and keep update
+                        always. Wrapped with bootstrap easy to use and fast. It
+                        can improve and add more functionalty if needed.
+                      </p>
+                    </Card.Text>
+                    <Card.Link
+                      target="__blank"
+                      href="https://github.com/kkureli/movie-explorer"
+                    >
+                      <button mb-0 p-0 type="button" class="btn btn-danger">
+                        <span style={{ color: "black" }}>Go To Project</span>
+                      </button>
+                    </Card.Link>
+                  </Card.Body>
+                </Card> */}
+
+                <div
+                  style={{
+                    marginTop: "20px",
+                    width: "540px",
+                  }}
+                  class="col-md-4 center-block projectCard"
+                >
+                  <div style={{ width: "500px" }} class="section-box-ten">
+                    <figure>
+                      <h3>ToDo List App (Redux, Firebase)</h3>
+                      <p>
+                        ToDo App website which is based on Redux
+                        middleware-thunk, <br /> Firestore for database,
+                        Firebase for authentication and <br /> cloud functions
+                        for notifications.
+                        <span id="todoDescSpanMobile">
+                          Homepage was built for public <br />
+                          usage. After you signup and login you can reach
+                          personal todo <br /> list page for private usage.
+                        </span>
+                      </p>
+                      <p>
+                        Basic: You can visit the website live{" "}
+                        <span>
+                          <a
+                            target="__blank"
+                            href="https://kkureli.github.io/ToDoAppRedux/"
+                          >
+                            here
+                          </a>{" "}
+                          <span>| </span>
+                          <a
+                            target="__blank"
+                            href="https://github.com/kkureli/ToDoAppRedux"
+                          >
+                            Github Repo
+                          </a>
+                        </span>{" "}
+                      </p>
+
+                      <p>
+                        Advanced: You can visit the website live{" "}
+                        <span>
+                          <a
+                            target="__blank"
+                            href="https://todo-app-38640.web.app/"
+                          >
+                            here
+                          </a>{" "}
+                          <span>| </span>
+                          <a
+                            target="__blank"
+                            href="https://github.com/kkureli/ToDoApp-Firebase"
+                          >
+                            Github Repo
+                          </a>
+                        </span>{" "}
+                      </p>
+                    </figure>
+                    <div style={{ width: "540px" }}>
+                      <img
+                        width="93%"
+                        height="290px"
+                        alt="mentor"
+                        src={require("./todog.gif")}
                         class="img-responsive"
                       />
                     </div>
