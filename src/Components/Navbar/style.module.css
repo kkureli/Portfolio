@@ -1,0 +1,72 @@
+/* body {
+    z-index: -5 !important;
+} */
+
+html,
+body {
+  height: 100%;
+}
+
+.Nav {
+  /* position: absolute; */
+  left: 0;
+  width: 60px;
+  background-color: rgb(24, 24, 24);
+  height: 100vh;
+  display: block;
+  color: white;
+  z-index: 2;
+  color: black;
+  position: fixed;
+  /* overflow-y: scroll;
+    overflow-x: hidden;
+    overflow: scroll; */
+}
+
+.logo {
+  width: 40px !important;
+  position: absolute;
+  top: 12px;
+  height: 50px;
+}
+
+.bar {
+  padding-top: 50px;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 20%;
+}
+
+.icons {
+  width: 30px;
+  padding-bottom: 20px;
+  /* -webkit-filter: invert(4%); */
+  /* fill: red; */
+}
+
+.iconPath {
+  filter: brightness(350%);
+  /* border-top: 1px red solid;
+    border-radius: 90%;
+    padding-top: 10px; */
+  width: 80%;
+}
+
+.icons:hover {
+  border-top: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+  padding: 6px 0;
+}
+
+.homeIcon {
+  /* color: rgb(116, 17, 17) !important; */
+  font-size: 1.5em;
+  /* text-shadow: 1px 1px 1px #ccc !important; */
+  margin-top: 150px;
+  padding-bottom: 20px;
+}
+
+.social {
+  position: absolute;
+  padding-top: 50px;
+}

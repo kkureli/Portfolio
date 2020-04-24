@@ -1,0 +1,135 @@
+.wrapper {
+  width: 100%;
+  perspective: 800;
+}
+
+.cube {
+  left: 500px;
+  position: absolute;
+  top: 180px;
+  margin: 0 auto;
+  height: 300px;
+  width: 300px;
+  animation: spin 10s infinite linear;
+  transform-style: preserve-3d;
+}
+
+.one {
+  transform: translateZ(100px);
+}
+
+.two {
+  transform: translateZ(-100px) rotateY(180deg);
+}
+
+.three {
+  transform: rotateY(-270deg) translateX(100px);
+  transform-origin: top right;
+}
+
+.four {
+  transform: rotateY(270deg) translateX(-100px);
+  transform-origin: center left;
+}
+
+.five {
+  transform: rotateX(-270deg) translateY(-100px);
+  transform-origin: top center;
+}
+
+.six {
+  transform: rotateX(270deg) translateY(100px);
+  transform-origin: bottom center;
+}
+
+.wrapper:hover .one {
+  transform: translateZ(200px);
+}
+
+.wrapper:hover .two {
+  transform: translateZ(-200px) rotateY(180deg);
+}
+
+.wrapper:hover .three {
+  transform: rotateY(-270deg) translateZ(100px) translateX(100px);
+}
+
+.wrapper:hover .four {
+  transform: rotateY(270deg) translateZ(100px) translateX(-100px);
+}
+
+.wrapper:hover .five {
+  transform: rotateX(-270deg) translateZ(100px) translateY(-100px);
+}
+
+.wrapper:hover .six {
+  transform: rotateX(270deg) translateZ(100px) translateY(100px);
+}
+
+.cube > div {
+  transition: transform 0.2s ease-in;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateZ(-15deg) rotateX(45deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateZ(345deg) rotateX(-315deg) rotateY(360deg);
+  }
+}
+
+.cube > div {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border: 1px solid #333;
+  opacity: 0.9;
+}
+
+/* .cube>div:hover {
+    opacity: 0.6;
+    transition: opacity 0.3s linear;
+} */
+
+.one {
+  /* transform: rotateX(90deg) translateZ(100px); */
+  background-color: blue;
+  background-image: url("./imgs/javascript-logo-png-transparent.png");
+  background-size: 200px 200px;
+}
+
+.four {
+  /* transform: translateZ(100px); */
+  background-color: rgb(185, 78, 185);
+  background-image: url("./imgs/unnamed.png");
+  background-size: 200px 200px;
+}
+
+.six {
+  /* transform: rotateY(90deg) translateZ(100px); */
+  background-color: blue;
+  background-image: url("./imgs/react-bootstrap-tutorial.png");
+  background-size: 200px 200px;
+}
+
+.two {
+  /* transform: rotateY(180deg) translateZ(100px); */
+  background-color: green;
+  background-image: url("./imgs/html5.jpg");
+  background-size: 200px 200px;
+}
+
+.five {
+  /* transform: rotateY(-90deg) translateZ(100px); */
+  background-color: black;
+  background-image: url("./imgs/rec.png");
+  background-size: 200px 200px;
+}
+
+.three {
+  /* transform: rotateX(-90deg) translateZ(100px); */
+  background-color: #feeb51;
+  background-image: url("./imgs/css-logo-1200x900.jpg");
+  background-size: 200px 200px;
+}

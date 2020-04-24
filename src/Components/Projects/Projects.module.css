@@ -1,0 +1,37 @@
+.home {
+    display: inline-block;
+    margin-left: 8.5%;
+    position: absolute;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    margin-top: 1%;
+}
+
+.inline:hover {
+    color: white;
+}
+
+.inline {
+    display: inline-block;
+    color: white;
+    letter-spacing: -11px;
+    padding: 0;
+    font-size: 55px;
+    color: red;
+    margin-left: 12px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 837px) {
+    .home {
+        padding-left: 9%;
+        position: absolute;
+        display: block;
+        margin-left: 20px;
+        /* margin-top: 6%; */
+        width: 95%;
+    }
+}
+
+
+/* cardlarin responsive ayari index.css'de */

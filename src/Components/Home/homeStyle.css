@@ -1,0 +1,8 @@
+@media (max-width: 780px) {
+  #playerBtn,
+  .redBtn,
+  .soundBtn {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
