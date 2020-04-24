@@ -7,23 +7,23 @@ import SpinningCube from "./Pyramid/SpinningCube";
 import Drop from "./ColorDropDown";
 import Music from "./Music/Music";
 import { Route, Link } from "react-router-dom";
-
+import "./homeStyle.css";
 const content = [
   {
     text: "react",
     className: style.classA,
-    animation: "fade"
+    animation: "fade",
   },
   {
     text: "web",
     className: style.classB,
-    animation: "fade"
+    animation: "fade",
   },
   {
     text: "javascript",
     className: style.classC,
-    animation: "fade"
-  }
+    animation: "fade",
+  },
 ];
 
 const ExampleOne = (text, delay) => (
@@ -39,14 +39,6 @@ const ExampleOne = (text, delay) => (
 );
 
 const Home = React.memo(function Home(props) {
-  useEffect(() => {
-    // code to run on component mount
-
-    if (window.innerWidth < 500) {
-      var element = document.getElementById("playerBtn");
-      element.parentNode.removeChild(element);
-    }
-  });
   let hidden = false;
 
   const musicButton = () => {
@@ -176,16 +168,16 @@ const Home = React.memo(function Home(props) {
         id="playerBtn"
         onClick={() => musicButton()}
         style={{
-          zIndex: "580",
+          zIndex: 20012,
           position: "absolute",
           bottom: "0px",
-          left: "-48.2%"
+          left: "-48.2%",
         }}
         type="button"
         class="btn btn-danger p-0 m-0 soundBtn"
       >
         <img
-          style={{ zIndex: "58" }}
+          style={{ zIndex: 20012 }}
           width="44px"
           alt="music"
           src="https://img.icons8.com/wired/64/000000/music.png"

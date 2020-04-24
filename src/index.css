@@ -1,17 +1,102 @@
-@media (max-width: 837px) {
-    figure,
-    .section-box-ten {
-        width: 330px !important;
-        font-size: 90%;
-    }
-    .section-box-ten img {
-        width: 80%;
-        padding-right: 90px !important;
-    }
-    #burgerDemoTitle {
-        display: none;
-    }
-    #todoDescSpanMobile {
-        display: none !important;
-    }
+/* projects responsive */
+.section-box-ten,
+.section-box-ten figure {
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+@media (min-width: 837px) and (max-width: 1200px) {
+  .section-box-ten,
+  .section-box-ten figure {
+    overflow-y: auto;
+    overflow-x: auto;
+    font-size: 90%;
+  }
+  .section-box-ten img {
+    width: 100%;
+    padding-right: 5px !important;
+  }
+}
+
+@media (min-width: 837px) and (max-width: 991px) {
+  .section-box-ten {
+    width: 60% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-box-ten {
+    width: 85% !important;
+  }
+
+  figure,
+  .section-box-ten {
+    font-size: 90%;
+  }
+  .section-box-ten img {
+    width: 100%;
+    padding-right: 20% !important;
+  }
+  #burgerDemoTitle {
+    display: none;
+  }
+  #todoDescSpanMobile {
+    display: none !important;
+  }
+}
+
+/* for ipad */
+@media (min-width: 768px) and (max-width: 837px) {
+  .section-box-ten {
+    width: 80% !important;
+  }
+
+  figure,
+  .section-box-ten {
+    font-size: 90%;
+  }
+  .section-box-ten img {
+    width: 100%;
+    padding-right: 0% !important;
+  }
+  #burgerDemoTitle {
+    display: none;
+  }
+  #todoDescSpanMobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: 576px) {
+  figure,
+  .section-box-ten {
+    font-size: 80%;
+  }
+  .projectsList {
+    position: relative;
+    left: -30px;
+    width: 200px;
+  }
+
+  .projectDesc {
+    position: relative;
+    left: -10px;
+    width: 190px;
+  }
+  .section-box-ten img {
+    width: 100%;
+    padding-right: 35% !important;
+  }
+
+  .section-box-ten {
+    overflow: auto;
+  }
+
+  .projectTitle {
+    font-size: 180% !important;
+    padding-bottom: 10px;
+    position: relative;
+    left: -10px;
+    overflow: auto;
+  }
 }

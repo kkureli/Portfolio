@@ -54,10 +54,14 @@ const About = React.memo(function About(props) {
                     for frontend development opportunities.
                   </p>
                   <div>
-                    <button type="button" class="btn btn-dark mb-3">
-                      <Link to="./cv" style={{ color: "white" }}>
+                    <button type="button" className="btn btn-dark mb-3">
+                      <a
+                        style={{ color: "white" }}
+                        target="__blank"
+                        href="https://docs.google.com/document/d/e/2PACX-1vTmSXnfQtvmsmEAhUPhKXhhUAn1LpvXmJgowoa0DLWJ77FIGdsxcqR-P_lzJ6U6-cEfhezdio4Nr-Jb/pub"
+                      >
                         Click for CV
-                      </Link>
+                      </a>
                     </button>
                   </div>
                 </div>

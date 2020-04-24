@@ -34,7 +34,6 @@ const Navbar = (props) => {
           display: "flex",
           alignItems: "center",
           marginTop: "20%",
-          zIndex: "200",
           width: "60px",
         }}
       >

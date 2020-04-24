@@ -1,32 +1,53 @@
 .aboutHome {
-    font-weight: bold;
-    position: absolute;
-    margin-top: 5%;
-    display: inline-block;
-    margin-left: 10%;
-    padding: 0;
+  font-weight: bold;
+  position: absolute;
+  margin-top: 5%;
+  display: inline-block;
+  margin-left: 10%;
+  padding: 0;
 }
 
 .inline:hover {
-    color: white;
+  color: white;
 }
 
 .inline {
-    display: inline-block !important;
-    color: white;
-    letter-spacing: 3px;
-    padding: 0;
-    font-size: 55px;
-    color: red;
-    margin-bottom: 60px;
-    /* margin-left: 12px;
+  display: inline-block !important;
+  color: white;
+  letter-spacing: 3px;
+  padding: 0;
+  font-size: 55px;
+  color: red;
+  margin-bottom: 60px;
+  /* margin-left: 12px;
     margin-bottom: 40px; */
 }
 
 @media (max-width: 837px) {
-    .aboutHome {
-        position: absolute;
-        margin-left: 18%;
-        padding-bottom: 100px;
-    }
+  .aboutHome {
+    position: absolute;
+    margin-left: 10%;
+    padding-bottom: 100px;
+    width: 85%;
+    font-size: 90%;
+  }
+  .inline {
+    font-size: 300%;
+  }
+}
+@media (max-width: 576px) {
+  .aboutHome {
+    position: absolute;
+    margin-left: 17%;
+    padding-bottom: 100px;
+    width: 85%;
+    font-size: 90%;
+  }
+  .inline {
+    font-size: 300%;
+  }
+}
+
+a:link {
+  text-decoration: none !important;
 }
