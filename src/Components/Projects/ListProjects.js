@@ -1,5 +1,21 @@
 let ListProjects = [
   {
+    title: "Client Project - Na'amal",
+    techs: ["ReactJS", "Bootstrap React", "Agile", "Gitlab"],
+    desc:
+      "As a final project of bootcamp for a month I worked on a real client",
+    br: [
+      "project with group of 4 students and senior developer who review our",
+      "pull requests. Working as a remotely we follow agile principles with",
+      "daily standups and sprints.",
+      "After deploy link will be updated",
+    ],
+    image: "https://i.ibb.co/41GmPCG/Screen-Shot-2020-04-25-at-5-01-36-AM.png",
+    // githubLink: "",
+    demoLink: "https://naamal.netlify.app/",
+    private: true,
+  },
+  {
     title: "Social Media App",
     techs: [
       "ReactJS (Redux-Thunk)",
@@ -14,7 +30,7 @@ let ListProjects = [
       "enabling other users to like and comment on posts",
     ],
     image: "https://i.ibb.co/zNMhPKx/portalgif.gif",
-    githubLink: "#",
+    githubLink: "",
     demoLink: "https://portal-ca653.web.app/",
   },
   {
@@ -28,7 +44,7 @@ let ListProjects = [
       "Deployed with FileZilla.",
     ],
     image: "https://i.ibb.co/WBQzCMP/optgif.gif",
-    githubLink: "https://github.com/kkureli/Optisyeninsesi-Digital-Magazine",
+    // githubLink: "https://github.com/kkureli/Optisyeninsesi-Digital-Magazine",
     demoLink: "https://dergi.optisyeninsesi.com/",
     private: true,
   },
@@ -43,7 +59,7 @@ let ListProjects = [
     desc: "Where you can join rooms, create new channels and join chats. ",
     br: [""],
     image: "https://i.ibb.co/fn4fdPY/chatGif.gif",
-    // githubLink: "https://osamaakb.github.io/mentorship/",
+    githubLink: "https://github.com/kkureli/Chat-Messaging-App",
     demoLink: "https://chat-app-6ae0c.web.app/",
   },
   {

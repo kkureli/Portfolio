@@ -28,6 +28,7 @@ const Navbar = (props) => {
     return (
       <div
         style={{
+          zIndex: 100000,
           marginLeft: "-50px",
           position: "absolute",
           left: "50%",
