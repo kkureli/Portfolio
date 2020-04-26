@@ -16,7 +16,7 @@ let ListProjects = [
     private: true,
   },
   {
-    title: "Social Media App",
+    title: "Social Media App (Demo)",
     techs: [
       "ReactJS (Redux-Thunk)",
       "Bootstrap",
