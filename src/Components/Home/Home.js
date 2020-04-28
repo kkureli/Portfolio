@@ -1,13 +1,15 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Button from "react-bootstrap/Button";
-import { Wave } from "react-animated-text";
 import style from "./Home.module.css";
 import ReactTextRotator from "react-text-rotator";
 import SpinningCube from "./Pyramid/SpinningCube";
 import Drop from "./ColorDropDown";
 import Music from "./Music/Music";
-import { Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./homeStyle.css";
+import AnimationMapper from "./AnimationMapper";
+import { HI_LETTERS, IAM, NAME, DEVELOPER } from "./LettersList";
+
 const content = [
   {
     text: "react",
@@ -25,18 +27,6 @@ const content = [
     animation: "fade",
   },
 ];
-
-const ExampleOne = (text, delay) => (
-  <Wave
-    delay={delay}
-    effectDuration={2}
-    text={text}
-    iterations={1}
-    effect="verticalFadeIn"
-    effectChange={2}
-    effectDirection="up"
-  />
-);
 
 const Home = React.memo(function Home(props) {
   let hidden = false;
@@ -69,27 +59,11 @@ const Home = React.memo(function Home(props) {
       </span>
       <div className={style.home}>
         <div className={style.line}>
-          <span className={[style.inline, "wobble-skew"].join(" ")}>
-            {ExampleOne("H", 1)}
-          </span>
-          <span className={[style.inline, "wobble-skew"].join(" ")}>
-            {ExampleOne("i", 1.5)}
-          </span>
-          <span className={[style.inline, "wobble-skew"].join(" ")}>
-            {ExampleOne(", ", 2)}
-          </span>
+          <AnimationMapper letters={HI_LETTERS}></AnimationMapper>
         </div>
 
         <div>
-          <span className={[style.inline, "wobble-skew"].join(" ")}>
-            {ExampleOne("I", 1)}
-          </span>
-          <span className={[style.inline, "wobble-skew"].join(" ")}>
-            {ExampleOne("'", 1.5)}
-          </span>
-          <span className={[style.inline, "wobble-skew"].join(" ")}>
-            {ExampleOne("m ", 2)}
-          </span>
+          <AnimationMapper letters={IAM}></AnimationMapper>
           <img
             style={{ marginLeft: "3px" }}
             className={`${style.inline} ${style.bigK}`}
@@ -97,57 +71,14 @@ const Home = React.memo(function Home(props) {
             src={require("./kg-happy.png")}
             alt=""
           />
-          <span className={[style.inline, "wobble-skew"].join(" ")}>
-            {ExampleOne("a", 1)}
-          </span>
-          <span className={[style.inline, "wobble-skew"].join(" ")}>
-            {ExampleOne("a", 1.5)}
-          </span>
-          <span className={[style.inline, "wobble-skew"].join(" ")}>
-            {ExampleOne("n", 1.7)}
-          </span>
-          <span className={[style.inline, "wobble-skew"].join(" ")}>
-            {ExampleOne(",", 1.8)}
-          </span>
+          <AnimationMapper letters={NAME}></AnimationMapper>
         </div>
         <div>
           <span className={style.rotator}>
             <ReactTextRotator content={content} time={3000} startDelay={1500} />
           </span>
           <div>
-            <span className={[style.inline, "wobble-skew"].join(" ")}>
-              {ExampleOne("d", 1)}
-            </span>
-            <span className={[style.inline, "wobble-skew"].join(" ")}>
-              {ExampleOne("e", 1.2)}
-            </span>
-            <span className={[style.inline, "wobble-skew"].join(" ")}>
-              {ExampleOne("v", 1.4)}
-            </span>
-            <span className={[style.inline, "wobble-skew"].join(" ")}>
-              {ExampleOne("e", 1.5)}
-            </span>
-            <span className={[style.inline, "wobble-skew"].join(" ")}>
-              {ExampleOne("l", 1.6)}
-            </span>
-            <span
-              style={{ "padding-left": "3px" }}
-              className={[style.inline, "wobble-skew"].join(" ")}
-            >
-              {ExampleOne("o", 1.8)}
-            </span>
-            <span className={[style.inline, "wobble-skew"].join(" ")}>
-              {ExampleOne("p", 1.9)}
-            </span>
-            <span className={[style.inline, "wobble-skew"].join(" ")}>
-              {ExampleOne("e", 2)}
-            </span>
-            <span className={[style.inline, "wobble-skew"].join(" ")}>
-              {ExampleOne("r", 2)}
-            </span>
-            <span className={[style.inline, "wobble-skew"].join(" ")}>
-              {ExampleOne(".", 2)}{" "}
-            </span>
+            <AnimationMapper letters={DEVELOPER}></AnimationMapper>
             <code className={style.h1Ccode}>&lt;h1&gt;</code>
           </div>
         </div>
@@ -198,10 +129,4 @@ const Home = React.memo(function Home(props) {
   );
 });
 
-// const comprasionFn = function(prevState, nextState) {
-//   console.log("prev", prevState);
-//   console.log("next", nextState);
-// };
-
-// export default React.memo(Home, comprasionFn);
 export default Home;
