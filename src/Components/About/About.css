@@ -1,0 +1,4 @@
+.cvBtn:hover {
+  box-shadow: 0px 5px 10px #9796f0;
+  transform: translateY(3px);
+}

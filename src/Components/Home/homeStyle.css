@@ -6,3 +6,20 @@
     visibility: hidden !important;
   }
 }
+
+.contactMeDiv {
+  margin-left: 5%;
+  color: white !important;
+}
+
+.btn-outline-danger {
+  letter-spacing: 5px !important;
+  padding-left: 12px !important;
+  color: rgb(220, 24, 32) !important;
+}
+.btn-outline-danger:hover {
+  color: white !important;
+  background-image: none;
+  box-shadow: 0px 5px 10px #9796f0;
+  transform: translateY(3px);
+}

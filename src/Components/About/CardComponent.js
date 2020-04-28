@@ -1,7 +1,7 @@
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { Route, Link } from "react-router-dom";
-
+import "./AboutCard.css";
 import React from "react";
 
 export default function CardComponent() {
@@ -21,7 +21,7 @@ export default function CardComponent() {
           <Card.Text text={"dark"}>03 / 01 / 1995</Card.Text>
           <Card.Text text={"dark"}>Istanbul, TURKEY</Card.Text>
           <Link to="./contact">
-            <Button variant="dark" active>
+            <Button className="aboutContactBtn" variant="dark" active>
               <span style={{ color: "white" }}>Contact</span>
             </Button>
           </Link>

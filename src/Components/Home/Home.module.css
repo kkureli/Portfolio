@@ -81,7 +81,8 @@ code {
   letter-spacing: 3px;
   margin-top: 17px;
   color: white;
-  /* margin-left: 15px; */
+  margin-left: 6%;
+  width: 125%;
 }
 
 canvas {

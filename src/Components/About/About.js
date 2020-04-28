@@ -3,6 +3,7 @@ import { Wave } from "react-animated-text";
 import Card from "./CardComponent";
 import { Route, Link } from "react-router-dom";
 import style from "./About.module.css";
+import "./About.css";
 
 const About = React.memo(function About(props) {
   const ExampleOne = (text, delay) => (
@@ -47,14 +48,19 @@ const About = React.memo(function About(props) {
               <div class="row">
                 <div class="col">
                   <p>
-                    Frontend web developer with a background in Mechatronics
-                    Engineering. <br /> <br /> Enthusiastic coding bootcamp
-                    graduate who poses comprehensive and practical knowledge of
-                    latest programming technologies. <br /> <br /> Passionate
-                    for frontend development opportunities.
+                    Front end web developer with a passion for working and
+                    collaborating with other developers to enhance web
+                    development together by bringing meaningful and compelling
+                    websites to users.
+                  </p>
+                  <p>
+                    Enthusiastic coding bootcamp graduate who possesses
+                    comprehensive and practical knowledge of latest programming
+                    technologies with experience in HTML, CSS, JavaScript, and
+                    ReactJS and a background in Mechatronics Engineering.
                   </p>
                   <div>
-                    <button type="button" className="btn btn-dark mb-3">
+                    <button type="button" className="btn btn-dark mb-3 cvBtn">
                       <a
                         style={{ color: "white" }}
                         target="__blank"

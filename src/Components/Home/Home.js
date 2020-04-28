@@ -154,9 +154,11 @@ const Home = React.memo(function Home(props) {
         <h2 className={[style.underText].join(" ")}>
           Front End Web Developer / Freelancer
         </h2>
-        <div>
+        <div className="contactMeDiv">
           <Link to="./contact">
-            <Button variant="danger">CONTACT ME</Button>
+            <Button variant="outline-danger contactHomeBtn" className="p-2 ">
+              CONTACT ME
+            </Button>
           </Link>
         </div>
       </div>
