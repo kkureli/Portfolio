@@ -83,7 +83,7 @@ const Home = React.memo(function Home(props) {
           </div>
         </div>
         <h2 className={[style.underText].join(" ")}>
-          Front End Web Developer / Freelancer
+          Full Stack Web Developer / Freelancer
         </h2>
         <div className="contactMeDiv">
           <Link to="./contact">
