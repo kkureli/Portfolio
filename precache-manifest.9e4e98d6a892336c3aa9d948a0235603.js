@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dae09382cbcae19d188b5fd119413025",
+    "revision": "6c4895456d425016336cf7b9e2089f05",
     "url": "/Portfolio/index.html"
   },
   {
-    "revision": "cfb2e5bcbe9ca736d534",
-    "url": "/Portfolio/static/css/main.b6fdf135.chunk.css"
+    "revision": "ef76bc113508421967f4",
+    "url": "/Portfolio/static/css/main.288ccb6c.chunk.css"
   },
   {
     "revision": "6b2ec1b08e6cf90cded8",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/js/2.b9469715.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cfb2e5bcbe9ca736d534",
+    "revision": "ef76bc113508421967f4",
     "url": "/Portfolio/static/js/main.ab9bf5c6.chunk.js"
   },
   {
@@ -46,10 +46,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f65a1f54e74373f4c61a946e0bdedacd",
     "url": "/Portfolio/static/media/react-bootstrap-tutorial.f65a1f54.png"
-  },
-  {
-    "revision": "7304cf6b6212d6505798c043f02e1e93",
-    "url": "/Portfolio/static/media/rec.7304cf6b.png"
   },
   {
     "revision": "dd7784a9f6b6fd46106661b5c43afae1",
